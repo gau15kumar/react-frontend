@@ -15,7 +15,7 @@ import PrivateRoute from "./auth/PrivateRoute";
 import ForgotPassword from "./user/ForgotPassword";
 import ResetPassword from "./user/ResetPassword";
 import Admin from "./admin/Admin";
-import StickyFooter from './core/Footer-sticky'
+
 import Footer from './core/Footer'
 
 
@@ -49,13 +49,7 @@ const MainRouter = () => (
             <PrivateRoute exact path="/findpeople" component={FindPeople} />
             <PrivateRoute exact path="/user/:userId" component={Profile} />
         </Switch>
-        <Switch>
-            <Route exact path='/signin' component ={StickyFooter} />
-            <Route exact path='/signup' component ={StickyFooter} />
-            <PrivateRoute exact path="/post/create" component={StickyFooter} />
-            <PrivateRoute exact path="/user/:userId" component={StickyFooter} />
-            <Route path="*" component = {Footer} />
-        </Switch>
+    <Footer />
       
     </div>
 );
