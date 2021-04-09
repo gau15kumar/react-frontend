@@ -16,7 +16,7 @@ import ForgotPassword from "./user/ForgotPassword";
 import ResetPassword from "./user/ResetPassword";
 import Admin from "./admin/Admin";
 
-import Footer from './core/Footer'
+
 
 
 const MainRouter = () => (
@@ -49,7 +49,7 @@ const MainRouter = () => (
             <PrivateRoute exact path="/findpeople" component={FindPeople} />
             <PrivateRoute exact path="/user/:userId" component={Profile} />
         </Switch>
-    <Footer />
+  
       
     </div>
 );
