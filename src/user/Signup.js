@@ -74,7 +74,7 @@ class Signup extends Component {
                         email: "",
                         password: "",
                         open: true,
-                        loading:true
+                        loading:false
                     });
             });
         } else {
