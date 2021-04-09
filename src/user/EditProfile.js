@@ -47,7 +47,7 @@ class EditProfile extends Component {
     const { name, email, password, fileSize } = this.state;
     if (fileSize > 30000000) {
       this.setState({
-        error: "File size should be less than 100kb",
+        error: "File size should be less than 3MB",
         loading: false
       });
       return false;
@@ -57,6 +57,7 @@ class EditProfile extends Component {
       return false;
     }
     // email@domain.com
+    // eslint-disable-next-line no-useless-escape
     if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
       this.setState({
         error: "A valid Email is required",

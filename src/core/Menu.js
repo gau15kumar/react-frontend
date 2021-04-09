@@ -14,7 +14,7 @@ const Menu = ({ history }) => (
                     <div className ="is-size-4 "><strong>The Social Club</strong></div>
                 </Link>
                 
-                <a role="button" class="navbar-burger" id="burger" data-target="navbarBasicExample" aria-label="menu" aria-expanded="false">
+                <a role="button" class="navbar-burger" id="burger" data-target="navbarBasicExample" aria-label="menu" aria-expanded="false" href>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
